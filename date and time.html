@@ -1,0 +1,29 @@
+<html>
+    <body bgColor="black">
+  <form>
+ <font color="orange" family="vani" size="8"> <u> Enter User Name : </u> </font>
+<input type="text" id="t1" > <br>
+<input  type="button" size="20" value="ok" onclick="show()">
+ 
+</form>
+     </body>  
+  </html>
+<script >
+function show()
+{
+      <link rel="stylesheet" href="demo.css"> </link> 
+  var  n=document.getElementById("t1").value;
+      var d1=new Date();
+document.write("date and time ="+ d1);
+var h=d1.getHours();
+   if(h>=5 && h<12)
+document.write("<br> Good Morning....."+n);
+else if(h>=12 && h<=18)
+document.write("<br> Good Afternoon....."+n);
+else if(h>18 && h<=21)
+document.write("<br> Good Evening....."+n);
+ else
+document.write("<br> Good Night....."+n);
+}
+</script>
+  
