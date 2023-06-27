@@ -1,0 +1,27 @@
+<html>
+  <body>
+           <form>
+       Enter Number To  Starts table :
+<input type="number" id="t1"><br>
+    Enter Number To  Ends  table :
+<input type="number" id="t2"><br>
+<input type="button" value="Display table's" onclick="table()">
+    </form>
+   </body>
+         </html>
+  <script language="javascript">
+      function table()
+{
+      var n1=document.getElementById("t1").value;
+      var n2=document.getElementById("t2").value;
+           for(i=1; i<=10; i++)
+     {
+              for(j=n1; j<=n2; j++)
+   {
+            document.write("<br>"+ i*j);
+}
+             document.write("<br>");
+}
+                 </script>
+
+        

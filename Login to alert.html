@@ -1,0 +1,26 @@
+<html>
+<body>
+     <form>
+Enter username  : 
+    <input type="text" id="t1" > <br>
+Enter password  : 
+    <input type="password" id="t2" > <br>
+<input type="button" value="Login" onclick="validate()">
+   </form>
+      </body>
+</html>
+                <script>
+
+function  validate()
+{
+    var u=document.getElementById("t1").value;
+     var p=document.getElementById("t2").value;
+  if(u=="kartik_dudhal_21" && p=="dudhal15")
+ {
+     alert("Login successfully......");
+      window.location="pic3.jpg";
+ }
+else
+     alert("invalid user or password.....");
+}
+   </script>

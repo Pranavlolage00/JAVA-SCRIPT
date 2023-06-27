@@ -1,0 +1,22 @@
+<html>
+<body>
+     <form>
+Enter limit  :  
+    <input type="text" id="t1" > <br>
+<input type="button" value="Ok" onclick="disp_odd()">
+   </form>
+      </body>
+</html>
+                <script>
+
+function  disp_odd()
+{
+    var n=document.getElementById("t1").value;
+    n=parseInt(n);
+      for(i=1; i<=n; i++)
+   {
+             if(i%2==1)
+            document.write("<br>"+i);
+    }
+}
+   </script>

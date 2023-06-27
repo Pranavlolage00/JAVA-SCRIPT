@@ -1,0 +1,53 @@
+<html>
+<body>
+    
+    <form>
+enetr number:-
+<input type="text" id="t1"> <br>
+<input type="button" value="reverse" onclick="reverse()"> <br>
+  <h1><i> Move And see</i>	 </h1>
+<input type="button" value="red" onmousemove="f1()">
+<input type="button" value="yellow" onmousemove="f2()">
+<input type="button" value="orange" onmousemove="f3()">
+<input type="button" value="pink" onmousemove="f4()">
+ <ol type="I">
+ <li><a href="table.html"</a>
+</ol> 
+
+
+</body>
+        </form>
+</html>       
+    <script>
+ function reverse()
+{
+    var n=document.getElementById("t1").value;
+   n=parseInt(n);
+  var r=0;
+while(n>0)
+{
+   d=n%10;
+   r=r*10+d;
+  n=parseInt(n/10);
+}
+   document.write("reverse="+r);
+}
+function f1()
+{
+    document.bgColor="red";
+}
+function f2()
+{
+    document.bgColor="yellow";
+}
+function f3()
+{
+    document.bgColor="orange";
+}
+function f4()
+{
+    document.bgColor="pink";
+}
+  </script>
+
+  

@@ -1,0 +1,24 @@
+<html>
+  <body>
+<h1> input radius vaalue and get the volume of sphare </h1>
+    <form>
+Radius :
+<input type='text' id='t1' > <br>
+Volume :
+<input type='text' id='t2' > <br>
+<input type='button' value='calculate' onclick='volume()'>
+     </form>
+</body>
+   </html>
+<script>
+ function volume()
+{
+  var r=document.getElementById('t1').value;
+r=parseFloat(r);
+
+var v=4/3*3.14*r*r*r;
+
+document.getElementById('t2').value=v;
+}
+   </script>
+
